@@ -9,6 +9,10 @@ const folderPath = "files/";
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+  return res.status(200);
+});
+
 app.post("/upload", (req, res) => {
   const form = new multipart.Form();
 
