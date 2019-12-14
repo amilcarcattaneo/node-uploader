@@ -4,8 +4,9 @@ const cors = require("cors");
 const fs = require("fs");
 
 const app = express();
-const port = 5000;
 const folderPath = "files/";
+
+let port = process.env.PORT || 80;
 
 app.use(cors());
 
