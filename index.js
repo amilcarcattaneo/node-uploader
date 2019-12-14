@@ -10,7 +10,7 @@ const folderPath = "files/";
 app.use(cors());
 
 app.get("/", (req, res) => {
-  return res.status(200);
+  return res.status(200).send({ status: "ok" });
 });
 
 app.post("/upload", (req, res) => {
